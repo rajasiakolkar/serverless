@@ -39,4 +39,4 @@ jobs:
 
       - name: Update Lambda Function
         run: |
-          aws lambda update-function-code --function-name lambda_function_name --region ${{ secrets.AWS_REGION }} --zip-file fileb://csye6225-lambda-${{ github.run_number }}.zip
+          aws lambda update-function-code --function-name sns_lambda_email --region ${{ secrets.AWS_REGION }} --zip-file fileb://csye6225-lambda-${{ github.run_number }}.zip
